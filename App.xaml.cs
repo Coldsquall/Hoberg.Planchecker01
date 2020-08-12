@@ -16,6 +16,7 @@ namespace Hoberg.Planchecker01
 {
     /// <summary>
     /// Interaction logic for App.xaml
+    /// this is a test for git
     /// </summary>
     public partial class App
     {
