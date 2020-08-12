@@ -20,11 +20,6 @@ namespace Hoberg.Planchecker01.ViewModels
         public ConstraintResult Constrain(PlanningItem pi)
         {
             var image = pi.GetImage();
-            return Constrain(new F.Image(image));
-        }
-
-        public ConstraintResult Constrain(F.Image image)
-        {
             var diffDays = (DateTime.Now - image.CreationDateTime).Value.TotalDays;
             var msg = $"CT is {diffDays} days old";
 
